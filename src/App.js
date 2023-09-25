@@ -16,7 +16,7 @@ function App(){
         <h2>Whoop, it's Wednesday 🌝 ☕ </h2>
       </div>
       <div className="input">
-        <input  value={tuDo}  onChange={(e)=>setTodo(e.target.value)}  type="text"  placeholder="🖊️ Add item..." />
+        <input  value={tuDo}  onChange={(e)=>setTodo(e.target.value)}  type="text"  placeholder="🖊️ Create A Todo..." />
         <i
     onClick={() => {
       if (tuDo.trim() !== "") { 

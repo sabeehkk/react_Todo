@@ -24,19 +24,15 @@ function App(){
         setTodo("");
       }
     }}
-    className="fas fa-plus"
-  ></i>
-
+    className="fas fa-plus" ></i>
       </div>
       <div className="todos">
         {   tuDos.map((data)=>{
 
-       
       return (  <div className="todo" key={data.id}>
           <div className="left">
             <input onChange={(e)=>{
               console.log(e.target.checked);
-              console.log(data);
               setTodos(tuDos.filter(data2=>{
                 if(data2.id===data.id){
                     data2.status=e.target.checked
@@ -49,7 +45,6 @@ function App(){
          <div className="right">
             {<button onClick={()=>{
              setTodos((deleteTudo)=> deleteTudo.filter((item)=>item.id !==data.id))
-              console.log('delete done');
             }}>
              <i className="fas fa-times"></i>
             </button>}
